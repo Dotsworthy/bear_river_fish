@@ -16,9 +16,12 @@ class Bear
   end
 
   def take_fish_from_river(bear, river, fish)
+# there is no way to deal with nil values?
     bear.add_fish(fish)
     river.remove_fish(fish)
   end
+
+  #check homework solution to see how it works
 
   def roar
     return "ROAR!"
